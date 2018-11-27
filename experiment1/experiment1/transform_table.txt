@@ -1,0 +1,13 @@
+-1  letter  num   0   (  )  ;  {  }  ,  !   =  <  >  +  -  *  /  
+S   A       B     B1  C  C  C  C  C  C   D1 D2 D2 D2 D  D  D  E  
+A   A       A     A   Z  Z  Z  Z  Z  Z   Z  Z  Z  Z  Z  Z  Z  Z  
+B   Z       B     B   Z  Z  Z  Z  Z  Z   Z  Z  Z  Z  Z  Z  Z  Z  
+B1  Z       Z     Z   Z  Z  Z  Z  Z  Z   Z  Z  Z  Z  Z  Z  Z  Z  
+C   Z       Z     Z   Z  Z  Z  Z  Z  Z   Z  Z  Z  Z  Z  Z  Z  Z 
+D1  Z       Z     Z   Z  Z  Z  Z  Z  Z   Z  D  Z  Z  Z  Z  Z  Z  
+D2  Z       Z     Z   Z  Z  Z  Z  Z  Z   Z  D  Z  Z  Z  Z  Z  Z  
+D   Z       Z     Z   Z  Z  Z  Z  Z  Z 	 Z  Z  Z  Z  Z  Z  Z  Z  
+E   Z       Z     Z   Z  Z  Z  Z  Z  Z   Z  Z  Z  Z  Z  Z  E1 Z  
+E1  E1      E1    E1  E1 E1 E1 E1 E1 E1  E1 E1 E1 E1 E1 E1 E2 E1 
+E2  E1      E1    E1  E1 E1 E1 E1 E1 E1  E1 E1 E1 E1 E1 E1 E2 E3 
+E3  Z       Z     Z   Z  Z  Z  Z  Z  Z   Z  Z  Z  Z  Z  Z  Z  Z  

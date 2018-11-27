@@ -1,0 +1,16 @@
+{
+ int sum;
+ int mult;
+ int i;
+ int temp;
+ sum = 0;
+ mult = 1;
+ for(i = 1;i < 10;i = i + 1)
+ {
+  read temp;
+  sum = sum + temp;
+  mult = mult * temp;
+ }
+ write sum;
+ write mult;
+}
