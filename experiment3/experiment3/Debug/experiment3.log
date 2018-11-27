@@ -1,0 +1,4 @@
+﻿  experiment3.cpp
+f:\学习\学习资料\大三\编译原理\experiment\2018\实验三\experiment3\experiment3\experiment3.cpp(1094): warning C4715: “TESTmachine”: 不是所有的控件路径都返回值
+  experiment3.vcxproj -> F:\学习\学习资料\大三\编译原理\experiment\2018\实验三\experiment3\Debug\experiment3.exe
+  experiment3.vcxproj -> F:\学习\学习资料\大三\编译原理\experiment\2018\实验三\experiment3\Debug\experiment3.pdb (Partial PDB)
