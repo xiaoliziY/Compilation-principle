@@ -1,0 +1,110 @@
+//分析表
+void initpTab()
+{
+	pTab.push_back(Tab("P", "{", "{ D_L S_L }"));  //第一行 
+	pTab.push_back(Tab("P", "#", "ε"));
+
+	pTab.push_back(Tab("D_L", "if", "ε"));//2
+	pTab.push_back(Tab("D_L", "else", "ε"));
+	pTab.push_back(Tab("D_L", "while", "ε"));
+	pTab.push_back(Tab("D_L", "for", "ε"));
+	pTab.push_back(Tab("D_L", "write", "ε"));
+	pTab.push_back(Tab("D_L", "read", "ε"));
+	pTab.push_back(Tab("D_L", "int", "D_S D_L"));
+	pTab.push_back(Tab("D_L", "{", "ε"));
+	pTab.push_back(Tab("D_L", "}", "ε"));
+	pTab.push_back(Tab("D_L", "ID", "ε"));
+	pTab.push_back(Tab("D_L", ";", "ε"));
+
+	pTab.push_back(Tab("D_S", "int", "int ID ;"));//3
+	pTab.push_back(Tab("D_S", ";", "ε"));
+
+	pTab.push_back(Tab("S_L", "if", "S S_L"));//4
+	pTab.push_back(Tab("S_L", "else", "S S_L"));
+	pTab.push_back(Tab("S_L", "while", "S S_L"));
+	pTab.push_back(Tab("S_L", "for", "S S_L"));
+	pTab.push_back(Tab("S_L", "write", "S S_L"));
+	pTab.push_back(Tab("S_L", "read", "S S_L"));
+	pTab.push_back(Tab("S_L", "{", "S S_L"));
+	pTab.push_back(Tab("S_L", "}", "ε"));
+	pTab.push_back(Tab("S_L", "ID", "S S_L"));
+	pTab.push_back(Tab("S_L", ";", "S S_L"));
+
+	pTab.push_back(Tab("S", "if", "I_S"));//5
+	pTab.push_back(Tab("S", "else", "I_S"));
+	pTab.push_back(Tab("S", "while", "Wh_S"));
+	pTab.push_back(Tab("S", "for", "F_S"));
+	pTab.push_back(Tab("S", "write", "W_S"));
+	pTab.push_back(Tab("S", "read", "R_S"));
+	pTab.push_back(Tab("S", "{", "C_S"));
+	pTab.push_back(Tab("S", "ID", "A_S"));
+	pTab.push_back(Tab("S", ";", ";"));
+
+	pTab.push_back(Tab("I_S", "if", "if ( B_E ) S I_S'"));//6
+
+	pTab.push_back(Tab("I_S'", "if", "ε"));//7
+	pTab.push_back(Tab("I_S'", "else", "else S"));  
+	pTab.push_back(Tab("I_S'", "while", "ε"));
+	pTab.push_back(Tab("I_S'", "for", "ε"));
+	pTab.push_back(Tab("I_S'", "write", "ε"));
+	pTab.push_back(Tab("I_S'", "read", "ε"));
+	pTab.push_back(Tab("I_S'", "{", "ε"));
+	pTab.push_back(Tab("I_S'", "}", "ε"));
+	pTab.push_back(Tab("I_S'", "ID", "ε"));
+	pTab.push_back(Tab("I_S'", ";", "ε"));
+
+	pTab.push_back(Tab("Wh_S", "while", "while ( B_E ) S"));//8
+	pTab.push_back(Tab("F_S", "for", "for ( A_E ; B_E ; A_E ) S"));//9
+	pTab.push_back(Tab("W_S", "write", "write Ar_E ;"));//10
+	pTab.push_back(Tab("R_S", "read", "read ID ;"));//11
+	pTab.push_back(Tab("C_S", "{", "{ S_L }"));//12
+	pTab.push_back(Tab("A_E", "ID", "ID = Ar_E"));//13
+	pTab.push_back(Tab("A_S", "ID", "A_E ;"));//14
+
+	pTab.push_back(Tab("B_E", "ID", "Ar_E B_E'"));//15
+	pTab.push_back(Tab("B_E", "NUM", "Ar_E B_E'"));
+	pTab.push_back(Tab("B_E", "(", "Ar_E B_E'"));
+
+	pTab.push_back(Tab("B_E'", ">", "> Ar_E"));//16
+	pTab.push_back(Tab("B_E'", "<", "< Ar_E"));
+	pTab.push_back(Tab("B_E'", ">=", ">= Ar_E"));
+	pTab.push_back(Tab("B_E'", "<=", "<= Ar_E"));
+	pTab.push_back(Tab("B_E'", "==", "== Ar_E"));
+	pTab.push_back(Tab("B_E'", "!=", "!= Ar_E"));
+
+	pTab.push_back(Tab("Ar_E", "ID", "T Ar_E'"));//17
+	pTab.push_back(Tab("Ar_E", "NUM", "T Ar_E'"));
+	pTab.push_back(Tab("Ar_E", "(", "T Ar_E'"));
+
+	pTab.push_back(Tab("Ar_E'", "+", "+ T Ar_E'"));//18
+	pTab.push_back(Tab("Ar_E'", "-", "- T Ar_E'"));
+	pTab.push_back(Tab("Ar_E'", ">", "ε"));
+	pTab.push_back(Tab("Ar_E'", "<", "ε"));
+	pTab.push_back(Tab("Ar_E'", ">=", "ε"));
+	pTab.push_back(Tab("Ar_E'", "<=", "ε"));
+	pTab.push_back(Tab("Ar_E'", "!=", "ε"));
+	pTab.push_back(Tab("Ar_E'", "==", "ε"));
+	pTab.push_back(Tab("Ar_E'", ";", "ε"));
+	pTab.push_back(Tab("Ar_E'", ")", "ε"));
+
+	pTab.push_back(Tab("T", "ID", "F T'"));//19
+	pTab.push_back(Tab("T", "NUM", "F T'"));
+	pTab.push_back(Tab("T", "(", "F T'"));
+
+	pTab.push_back(Tab("T'", "+", "ε"));//20
+	pTab.push_back(Tab("T'", "-", "ε"));
+	pTab.push_back(Tab("T'", "*", "* F T'"));
+	pTab.push_back(Tab("T'", "/", "/ F T'"));
+	pTab.push_back(Tab("T'", ">", "ε"));
+	pTab.push_back(Tab("T'", "<", "ε"));
+	pTab.push_back(Tab("T'", ">=", "ε"));
+	pTab.push_back(Tab("T'", "<=", "ε"));
+	pTab.push_back(Tab("T'", "!=", "ε"));
+	pTab.push_back(Tab("T'", "==", "ε"));
+	pTab.push_back(Tab("T'", ";", "ε"));
+	pTab.push_back(Tab("T'", ")", "ε"));
+
+	pTab.push_back(Tab("F", "ID", "ID"));//21
+	pTab.push_back(Tab("F", "NUM", "NUM"));
+	pTab.push_back(Tab("F", "(", "( Ar_E )"));
+}

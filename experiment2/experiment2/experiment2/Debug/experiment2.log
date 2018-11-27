@@ -1,0 +1,7 @@
+﻿  experiment2.cpp
+f:\学习\学习资料\大三\编译原理\experiment\2018\实验二\experiment2\experiment2\experiment2.cpp(274): warning C4018: “<”: 有符号/无符号不匹配
+f:\学习\学习资料\大三\编译原理\experiment\2018\实验二\experiment2\experiment2\experiment2.cpp(279): warning C4018: “<”: 有符号/无符号不匹配
+f:\学习\学习资料\大三\编译原理\experiment\2018\实验二\experiment2\experiment2\experiment2.cpp(284): warning C4018: “<”: 有符号/无符号不匹配
+f:\学习\学习资料\大三\编译原理\experiment\2018\实验二\experiment2\experiment2\experiment2.cpp(762): warning C4551: 缺少参数列表的函数调用
+  experiment2.vcxproj -> F:\学习\学习资料\大三\编译原理\experiment\2018\实验二\experiment2\Debug\experiment2.exe
+  experiment2.vcxproj -> F:\学习\学习资料\大三\编译原理\experiment\2018\实验二\experiment2\Debug\experiment2.pdb (Partial PDB)
